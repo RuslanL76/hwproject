@@ -19,7 +19,7 @@ const renderProducts = (list) => {
         return renderProduct(product.title, product.price, product.img);
     });
     console.log(productList);
-    document.querySelector('.products').innerHTML = productList;
+    document.querySelector('.products').innerHTML = productList.join(' ');
 
 };
 
